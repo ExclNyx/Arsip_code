@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Beranda</title>
+    <style type="text/css">
+        *,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9a9a9a;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav div img {
+  width: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  color: #191919;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+
+nav ul li a:hover {
+  color: orangered;
+  border-bottom: 1px solid orangered;
+}
+
+.menu-icon {
+  /* background-color: tomato; */
+  font-size: 28px;
+  display: none;
+}
+
+main {
+  padding-top: 7rem;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li:last-of-type {
+    padding-bottom: 8px;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    al
+    </style>
+    
+  </head>
+  <body>
+    <nav>
+      <div class="">
+        <img src="img/logo.png" alt="my-avatar" />Kementerian Tata Ruang/ <br> Badan Pertanahan Nasional Kanwil Papua
+      </div>
+
+      <div id="menu-icon" class="menu-icon">
+        <i class="ph-fill ph-list"></i>
+      </div>
+      <ul id="menu-list" class="hidden">
+        <li>
+          <a href="beranda.htm">Home</a>
+        </li>
+        <li>
+          <a href="#">Profil</a>
+        </li>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Work</a>
+        </li>
+        <li>
+          <a href="#">Tech Stack</a>
+        </li>
+        <li>
+          <a href="index.html">exit</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus est
+      in voluptatum nesciunt itaque. Voluptatibus ratione illum ducimus impedit
+      minus itaque officia asperiores, maxime quis fugiat odit natus rerum ipsam
+      quaerat corporis reprehenderit deleniti perspiciatis deserunt nostrum.
+      Asperiores, rerum voluptatum!
+    </main>
+    <script>
+    const menuIcon = document.getElementById("menu-icon");
+    const menuList = document.getElementById("menu-list");
+
+    menuIcon.addEventListener("click", () => {
+    menuList.classList.toggle("hidden");
+    });
+</script>
+  </body>
+</html>
